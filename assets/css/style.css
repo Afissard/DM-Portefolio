@@ -1,0 +1,49 @@
+html{
+    background-color: lightblue;
+    font-family: 'Times New Roman';
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+header{
+
+    /*flex*/
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    background-color: lightskyblue;
+    margin: 0%;
+    padding: 0%;
+
+    /*Affiche la banner quelle que soit la position du scroll*/
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.main{
+    /*flex*/
+    display: flex;
+    flex-flow: column;
+    margin: 10%;
+    padding: 10%;
+    /*width: 25%;*/
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+.flex_row{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+
+.flex_col{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
