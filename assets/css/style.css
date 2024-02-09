@@ -6,14 +6,15 @@ html{
 body{
     margin: 0px;
     padding: 0px;
-
+    display: flex;
+    flex-flow: column;
 }
 
-header{
-
+.banner{
     /*flex*/
     display: flex;
     flex-flow: row;
+
     width: 100%;
     background-color: lightskyblue;
     margin: 0%;
@@ -29,13 +30,9 @@ header{
     /*flex*/
     display: flex;
     flex-flow: column;
-    margin: 10%;
-    padding: 10%;
-    /*width: 25%;*/
-    background-color: lightblue;
-    border-radius: 10px;
 }
 
+/*Exemple flexbox*/
 .flex_row{
     display: flex;
     flex-flow: row;
