@@ -1,20 +1,27 @@
 html{
-    background-color: lightblue;
     font-family: 'Times New Roman';
 }
 
 body{
     margin: 0px;
     padding: 0px;
-    display: flex;
-    flex-flow: column;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0px;
+    grid-auto-rows: minmax(80px, auto);
 }
 
 .banner{
+    /*grid*/
+    grid-column: 1 / 1;
+    grid-row: 1;
+
     /*flex*/
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
 
+    /*style*/
     width: 100%;
     background-color: lightskyblue;
     margin: 0%;
@@ -27,9 +34,35 @@ body{
 }
 
 .main{
+    /*grid*/
+    grid-column: 1 / 1;
+    grid-row: 2;
+
+    /*flex*/
+    display: flex;
+    flex-flow: row;
+
+    /*style*/
+    width: 100%;
+    background-color: lightblue;
+    margin: 0%;
+    padding: 0%;
+}
+
+.footer{
+    /*grid*/
+    grid-column: 1 / 1;
+    grid-row: 3;
+
     /*flex*/
     display: flex;
     flex-flow: column;
+
+    /*style*/
+    width: 100%;
+    background-color: lightskyblue;
+    margin: 0%;
+    padding: 0%;
 }
 
 /*Exemple flexbox*/
