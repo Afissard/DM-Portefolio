@@ -1,98 +1,113 @@
+@font-face{
+    font-family: DuneFont;
+    src: url("../font/dune_rise/Dune_Rise.otf");
+
+}
+
 html{
-    font-family: 'Times New Roman';
+    /* font */
+    font-family: Consolas, monospace;
+    color: white;
+    font-weight: bold;
 }
 
 body{
-    /*position*/
-    margin: auto;
-    padding: auto;
+    /* position */
+    padding: 0px;
+    margin: 0px;
 
-    /*flexbox*/
+    /* flex */
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100svh;
 
-    /*style*/
-    /* background-color: lightslategray; */
+    /* style */
     background-image: url("../img/main-background-01.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
-
+    background-size: cover;
+    background-position: center;
 }
 
-.banner{
-    /*position*/
-    position: fixed;
+nav{
+    /* position */
     /* z-index: 999; */
+    position: fixed;
     width: 100%;
 
-    /*flexbox*/
+    /* flexbox */
     display: flex;
-    flex: auto;
     flex-flow: row;
+    
+    /* style */
     justify-content: space-between;
-
-    /*Style*/
     background-color: rgba(50, 50, 50, 0.50);
 }
 
-.main{
-    /*position*/
+main{
+    /* position */
     width: 100%;
-    height: 100%;
 
-    /*flexbox*/
+    /* flexbox */
+    flex-grow: 1;
     display: flex;
-    flex: 5;
-    flex-flow: column;
+    flex-flow: column wrap;
+    
+    /* style */
     justify-content: space-around;
-
-    /*Style*/
 }
 
-.footer{
-    /*position*/
+footer{
+    /* position */
     width: 100%;
 
-    /*flexbox*/
+    /* flexbox */
     display: flex;
-    flex: auto;
-    flex-flow: column;
+    flex-flow: row;
 
-    /*Style*/
+    /* style */
     justify-content: space-between;
     background-color: rgba(50, 50, 50, 0.50);
 }
 
-/*flexbox tab*/
+/* flexbox tab */
 .flex_row{
-    display: flex;
-    flex-flow: row;
+    /* position */
+    margin: 0px;
+    padding: 10px;
     justify-content: space-around;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    padding: 1%;
+    /* align-items: stretch; */
+
+    /* flexbox */
+    display: flex;
+    flex-flow: row wrap;
+
+    /* style */
 }
 
 .flex_col{
-    display: flex;
-    flex-flow: column;
+    /* position */
+    margin: 0px;
+    padding: 10px;
     justify-content: space-around;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    padding: 1%;
+    /* align-items: stretch; */
+
+    /* flexbox */
+    display: flex;
+    flex-flow: column wrap;
+
+    /* style */
 }
 
-/* Objets */
+/* objets */
 .projet_img{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 75%;
+    max-height: 75%;
     object-fit: contain;
 }
 
 .profil_img{
-    max-width: 75%;
-    max-height: 75%;
+    max-width: 50%;
+    max-height: 50%;
     object-fit: contain;
 }
