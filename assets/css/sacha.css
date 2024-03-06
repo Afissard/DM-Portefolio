@@ -18,12 +18,8 @@
 }
 
 @keyframes slide-left {
-    0% {
-        transform: translateX(125%);
-    }
-    100% {
-        transform: translateX(25%);
-    }
+    0% {transform: translateX(150%);}
+    100% {transform: translateX(0%);}
 }
 
 .slideRight{
@@ -31,38 +27,29 @@
 }
 
 @keyframes slide-right {
-    0% {
-        transform: translateX(-50%);
-    }
-    100% {
-        transform: translateX(25%);
-    }
+    0% { transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
 }
 
-.slideUp{
-    animation: slide-up 0.8s ease-in-out both;
+/* flexbox tab */
+.flex-row{
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1%;
+}
+.flex-row > *{
+    flex: 1 0 50%;
 }
 
-@keyframes slide-up {
-    0% {
-        transform: translateY(0%);
-    }
-    100% {
-        transform: translateY(-50%);
-    }
-}
-
-.slideDown{
-    animation: slide-down 0.8s ease-in-out both;
-}
-
-@keyframes slide-down {
-    0% {
-        transform: translateY(-50%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
+.flex-col{
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    display: flex;
+    flex-flow: column;
 }
 
 :root{
@@ -72,20 +59,12 @@
     --darkGreyColor: rgba(20, 20, 20, 1);
     --whiteColor: rgba(245, 245, 245, 1);
     --lightGreyColor: rgba(225, 225, 225, 1);
-    --blueColor: rgba(40, 95, 196, 1);
-    --redColor: rgb(207, 44, 44);
-
-    --fontColor: var(--whiteColor);
-    --backgroundColor: var(--blackColor);
-    --hl1Color: var(--blueColor);
-    --hl2Color: var(--greyColor);
+    --blueColor2: rgba(14, 177, 244, 255);
+    --blueColor: rgba(0, 74, 193, 255);
+    --redColor: rgba(189, 35, 54, 255);
 
     /* font */
     font-family: JohnstonFont, consolas, monospace;
-    color: var(--whiteColor);
-
-    /* style */
-    background-color: var(--blackColor);
 }
 
 @media (prefers-color-scheme: light) {
@@ -98,9 +77,8 @@
         background-color: var(--backgroundColor);
         color: var(--fontColor);
     }
-
 }
-  
+
 @media (prefers-color-scheme: dark) {
     :root{
         --fontColor: var(--whiteColor);
@@ -117,6 +95,8 @@ body{
     /* position */
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
 
     /* flex */
     display: flex;
@@ -155,78 +135,88 @@ p{
     text-justify: auto;
 }
 
+img{
+    max-width: 75vh;
+    max-height: 75vh;
+    object-fit: fill;
+    border-radius: 1rem;
+}
+
 nav{
     /* position */
     margin: 0%;
     padding: 1%;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
+    justify-content: left;
+    width: 100%;
+    height: auto; 
 
     /* flex */
     display: flex;
     flex-direction: row;
 
-    justify-content: space-between;
-    width: 100%;
-    height: auto; 
-
     /* style */
     background-color: var(--backgroundColor);
     opacity: 0;
-    animation: slide-up 0.8s ease-in-out both;
+    transition: opacity 0.3s ease; /* Smooth transition effect */
 }
 
 nav:hover{
     opacity: 1;
-    animation: slide-down 0.2s ease-in-out both;
 }
 
 nav > h2{
     font-size: 2rem;
+    margin-right: 2%;
 }
 
-.normalSection, .hlSectionUp, .hlSectionDown{
+.section{
     /* position */
-    margin: -2%;
-    padding: 5%;
-
-    /* flex */
-    display: flex;
-    flex-direction: column;
-
+    margin: 0%;
+    padding: 2%;
+    z-index: 0;
     justify-content: space-between;
     width: auto;
     height: auto; 
-}
-
-.normalSection{
-    /* style */
-    transform: rotate(0deg); 
-}
-
-.hlSectionUp{
-    /* style */
-    transform: rotate(-2deg); 
-    background-color: var(--hl1Color);
-}
-
-.hlSectionDown{
-    /* style */
-    transform: rotate(2deg); 
-    background-color: var(--hl1Color);
-}
-
-.textBox{
-    /* position */
-    margin: 5%;
-    padding: 2%;
 
     /* flex */
     display: flex;
     flex-direction: column;
+    
+    /* style */
+    transform: rotate(0deg); 
+    background-color: var(--backgroundColor);
+}
+
+.highlight{
+    z-index: 1;
+    background-color: var(--hl1Color);
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+/* 
+.rotateUp{
+    transform: rotate(-2deg); 
+}
+
+.rotateDown{
+    transform: rotate(2deg);
+} 
+*/
+
+.textBox{
+    /* position */
+    margin: 2% 5% 2% 5%;
+    padding: 2%;
     justify-content: space-between;
     width: auto;
     height: auto;
+
+    /* flex */
+    display: flex;
+    flex-direction: column;
 
     /* style */
     transform: rotate(0deg); 
