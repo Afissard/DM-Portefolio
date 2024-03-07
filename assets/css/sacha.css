@@ -59,9 +59,9 @@
     --darkGreyColor: rgba(20, 20, 20, 1);
     --whiteColor: rgba(245, 245, 245, 1);
     --lightGreyColor: rgba(225, 225, 225, 1);
-    --blueColor2: rgba(14, 177, 244, 255);
-    --blueColor: rgba(0, 74, 193, 255);
-    --redColor: rgba(189, 35, 54, 255);
+    --blueColor2: rgba(14, 177, 244, 1);
+    --blueColor: rgb(0, 79, 207);
+    --redColor: rgb(204, 29, 49);
 
     /* font */
     font-family: JohnstonFont, consolas, monospace;
@@ -167,9 +167,19 @@ nav:hover{
     opacity: 1;
 }
 
-nav > h2{
+nav > button{
     font-size: 2rem;
     margin-right: 2%;
+    border: none;
+    background-color: inherit;
+    font-family: FaktosFont;
+}
+
+nav > button:hover{
+    padding: 0 2% 0 2%;
+    border-radius: 2rem;
+    background-color: var(--fontColor);
+    color: var(--backgroundColor);
 }
 
 .section{
