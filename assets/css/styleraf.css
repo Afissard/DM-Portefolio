@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Cactus";
+    src: url('../font/Cactus\ Regular.otf');
+}
+
+body{
+    background-image: url("../img/desert.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.baner{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+
+    border-radius: 4px;
+    background-color: darkolivegreen;
+    border: solid;
+    border-width: 20px;
+    border-color: rgb(7, 63, 0);
+}
+.baner:hover{
+    background-color: rgb(100, 126, 57);
+}
+.titre{
+    display: inline-flex;
+    justify-content: center;
+    font-family: Cactus;
+    
+}
+h1{
+    font-size: 50px;
+}
+.main{
+    display: inline-flex;
+    width: 60%;
+    border: solid;
+    border-width: 20px;
+    border-color: rgb(7, 63, 0);
+    flex-direction: column;
+    background-color: darkolivegreen;
+    font-family: Cactus;
+    border-radius: 4px;
+    margin-top: 20px;
+    height: 500px;
+}
+div > div {
+    height: 100%;
+    width: 200px;
+    margin: 10px;
+    border: solid;
+    border-width: 10px;
+    border-color: rgb(7, 63, 0);
+    border-radius: 4px;
+}
+.Maracachi{
+    height:50px;
+    width: 50px;
+}
+footer{
+    display: inline-flex;
+    width: 60%;
+    border: solid;
+    border-width: 20px;
+    border-color: rgb(7, 63, 0);
+    justify-content: center;
+    background-color: darkolivegreen;
+    font-family: Cactus;
+    border-radius: 4px;
+    margin-top: 20px;
+    height:100px;
+}
