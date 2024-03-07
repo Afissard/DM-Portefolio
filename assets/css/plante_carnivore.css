@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Hor";
+    src: url("../font/DEADLY\ KILLERS.otf");
+}
+
+html {
+
+    background-image:url("../img/plantecarnivore1.jpeg ");
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+
+    display: grid;
+    grid-auto-columns: minmax(80px, auto);
+    grid-gap: 0px;
+    grid-auto-rows: minmax(80px, auto);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner{
+    /*grid*/
+    grid-column: 1/8;
+    grid-row: 1;
+
+    /*flex*/
+    display: flex;
+    flex-flow: column;
+
+    /*style*/
+    width: 100%;
+    background-color: rgb(32, 80, 28);
+    margin: 0%;
+    padding: 0%;
+
+    /*Affiche la banner quelle que soit la position du scroll*/
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.main{
+    /*grid*/
+    grid-column: 1/8;
+    grid-row: 2;
+
+    /*flex*/
+    display: flex;
+    flex-flow: row;
+
+    /*style*/
+    width: 100%;
+    background-color: rgb(113, 190, 136);
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.flex_row{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+
+.flex_col{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.empiflor{
+    font-family: Hor;
+    font-size: 25px;
+    color:rgb(255, 255, 255);
+    grid-column: 1;
+    grid-row: 3 / 6;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    background-image: none;
+}
+.empiflor:hover{
+    background-image: url("../img/empiflorreur.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vortente{
+    font-family: Hor;
+    font-size: 25px;
+    color:rgb(255, 255, 255);
+    grid-column: 7;
+    grid-row: 3 / 6;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    background-image: none;
+}
+
+.vortente:hover{
+    background-image: url("../img/vortente.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

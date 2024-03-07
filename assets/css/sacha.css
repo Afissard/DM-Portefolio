@@ -41,7 +41,7 @@
     gap: 1%;
 }
 .flex-row > *{
-    flex: 1 0 50%;
+    flex: 1 0 49%;
 }
 
 .flex-col{
@@ -130,6 +130,7 @@ h2{
 }
 
 p{
+    padding: 0.5rem;
     font-size: 1.5rem;
     text-align: justify;
     text-justify: auto;
@@ -138,8 +139,8 @@ p{
 img{
     max-width: 75vh;
     max-height: 75vh;
-    object-fit: fill;
-    border-radius: 1rem;
+    object-fit: contain;
+    border-radius: 2rem;
 }
 
 nav{
@@ -208,7 +209,7 @@ nav > h2{
 
 .textBox{
     /* position */
-    margin: 2% 5% 2% 5%;
+    margin: 3% 5% 3% 5%;
     padding: 2%;
     justify-content: space-between;
     width: auto;
@@ -221,5 +222,5 @@ nav > h2{
     /* style */
     transform: rotate(0deg); 
     background-color: var(--hl2Color);
-    border-radius: 0.5rem;
+    border-radius: 2rem;
 }
