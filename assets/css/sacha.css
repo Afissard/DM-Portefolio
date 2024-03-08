@@ -18,7 +18,7 @@
 }
 
 @keyframes slide-left {
-    0% {transform: translateX(150%);}
+    0% {transform: translateX(100%);}
     100% {transform: translateX(0%);}
 }
 
@@ -97,21 +97,19 @@ body{
     padding: 0;
     overflow-x: hidden;
     overflow-y: auto;
+    width: auto;
+    height: auto;
 
     /* flex */
     display: flex;
     flex-direction: column;
-    width: auto;
-    height: auto;
 }
 
 h1{
     /* position */
     margin: 0%;
-    padding: 0%;
+    padding: 2%;
     width: fit-content;
-
-    /* style */
 
     /* font */
     font-size: 10rem;
@@ -167,16 +165,23 @@ nav:hover{
     opacity: 1;
 }
 
-nav > button{
+button{
     font-size: 2rem;
-    margin-right: 2%;
+    margin: 0 1% 0 1%;
     border: none;
     background-color: inherit;
     font-family: FaktosFont;
 }
 
-nav > button:hover{
+button:hover{
     padding: 0 2% 0 2%;
+    border-radius: 2rem;
+    background-color: var(--fontColor);
+    color: var(--backgroundColor);
+}
+
+a > img:hover{ /* uniquement dans mainPage */
+    padding: 0 1% 0 1%;
     border-radius: 2rem;
     background-color: var(--fontColor);
     color: var(--backgroundColor);
@@ -185,10 +190,10 @@ nav > button:hover{
 .section{
     /* position */
     margin: 0%;
-    padding: 2%;
+    padding: 2% 0 2% 0;
     z-index: 0;
     justify-content: space-between;
-    width: auto;
+    width: 100%;
     height: auto; 
 
     /* flex */
@@ -207,17 +212,7 @@ nav > button:hover{
     /* justify-content: space-between; */
 }
 
-/* 
-.rotateUp{
-    transform: rotate(-2deg); 
-}
-
-.rotateDown{
-    transform: rotate(2deg);
-} 
-*/
-
-.textBox{
+.card{
     /* position */
     margin: 3% 5% 3% 5%;
     padding: 2%;
