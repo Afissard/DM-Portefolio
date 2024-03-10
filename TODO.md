@@ -1,3 +1,3 @@
 # TODO list :
-- Definir un thème général (police d'écriture, code couleur)
-- Trouvé des image pour la page principale
+- Mettre en place les images de profil dans la page principale
+- Finir nos pages personnelles (Sacha -> Ok)
