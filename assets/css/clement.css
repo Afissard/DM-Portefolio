@@ -97,12 +97,14 @@ body{
     grid-column: 3/4;
     grid-row: 3;
     color: rgb(255, 255, 255);
-}
-.jsp2{
+    .jsp2{
     visibility: hidden;
 }
+}
+
 
 .jsp:hover{
+    background-color: black;
     .jsp2{
         visibility: visible;
     }
@@ -129,5 +131,40 @@ body{
     background-size: contain;
     .vortente2{
         visibility: hidden;
+    }
+}
+
+.Q1{
+    grid-column: 1;
+    grid-row: 6/8;
+    color: rgb(255, 255, 255);
+    .Q11{
+        visibility: hidden;
+    }
+}
+
+.Q1:hover{
+    background-color: black;
+    .Q11{
+        visibility: visible;
+        color: rgb(255, 0, 0);
+    }
+}
+
+
+.Q2{
+    grid-column: 7;
+    grid-row: 6/8;
+    color: rgb(255, 255, 255);
+    .Q21{
+        visibility: hidden;
+    }
+}
+
+.Q2:hover{
+    background-color: black;
+    .Q21{
+        visibility: visible;
+        color: rgb(255, 0, 0);
     }
 }
