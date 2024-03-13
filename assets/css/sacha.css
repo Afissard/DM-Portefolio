@@ -169,23 +169,18 @@ nav:hover{
     opacity: 1;
 }
 
-button{
+nav > a{
     font-size: 2rem;
     margin: 0 1% 0 1%;
     border: none;
     background-color: inherit;
     font-family: FaktosFont;
+    color: var(--fontColor);
+    text-decoration: none;
 }
 
-button:hover{
+nav > a:hover{
     padding: 0 2% 0 2%;
-    border-radius: 2rem;
-    background-color: var(--fontColor);
-    color: var(--backgroundColor);
-}
-
-a > img:hover{ /* uniquement dans mainPage */
-    padding: 0 1% 0 1%;
     border-radius: 2rem;
     background-color: var(--fontColor);
     color: var(--backgroundColor);

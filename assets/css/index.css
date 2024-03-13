@@ -182,7 +182,7 @@ button:hover{
 }
 
 a > img:hover{ /* uniquement dans mainPage */
-    padding: 0 1% 0 1%;
+    padding: 2% 2% 2% 2%;
     border-radius: 2rem;
     background-color: var(--fontColor);
     color: var(--backgroundColor);
