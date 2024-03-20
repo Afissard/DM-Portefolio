@@ -1,0 +1,230 @@
+@font-face{
+    font-family: FaktosFont;
+    src: url("../font/faktos/Faktos.otf");
+}
+@font-face {
+    font-family: FaktosShadowFont;
+    src: url("../font/faktos/FaktosShadow.otf");
+}
+
+@font-face {
+    font-family: JohnstonFont;
+    src: url("../font/Johnston-ITC-Std-Medium/Johnston-ITC-Std-Medium.otf");
+}
+
+
+.slideLeft{
+    animation: slide-left 0.8s ease-in-out both;
+}
+
+@keyframes slide-left {
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(0%);}
+}
+
+.slideRight{
+    animation: slide-right 0.8s ease-in-out both;
+}
+
+@keyframes slide-right {
+    0% { transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
+
+/* flexbox tab */
+.flex-row{
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1%;
+}
+.flex-row > *{
+    flex: 1 0 49%;
+}
+
+.flex-col{
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    display: flex;
+    flex-flow: column;
+}
+
+:root{
+    /* color */
+    color-scheme: light dark;
+    --blackColor: rgba(0, 0, 0, 1);
+    --darkGreyColor: rgba(20, 20, 20, 1);
+    --whiteColor: rgba(245, 245, 245, 1);
+    --lightGreyColor: rgba(225, 225, 225, 1);
+    --blueColor2: rgb(141, 7, 98);
+    --blueColor: rgb(82, 0, 73);
+    --redColor: rgb(214, 74, 90);
+
+    /* font */
+    font-family: JohnstonFont, consolas, monospace;
+}
+
+.marginTop {
+    margin-top:2%;
+}
+
+@media (prefers-color-scheme: light) {
+    :root{
+        --fontColor: var(--blackColor);
+        --backgroundColor: var(--whiteColor);
+        --hl1Color: var(--redColor);
+        --hl2Color: var(--lightGreyColor);
+
+        background-color: var(--backgroundColor);
+        color: var(--fontColor);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --fontColor: var(--whiteColor);
+        --backgroundColor: var(--blackColor);
+        --hl1Color: var(--blueColor);
+        --hl2Color: var(--darkGreyColor);
+
+        background-color: var(--blackColor);
+        color: var(--whiteColor);
+    }
+}
+
+body{
+    /* position */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: auto;
+    height: auto;
+
+    /* flex */
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    /* position */
+    margin: 0%;
+    padding: 2%;
+    width: fit-content;
+
+    /* font */
+    font-size: 10rem;
+    font-family: FaktosShadowFont;
+}
+
+h2{
+    /* position */
+    margin: 0%;
+    padding: 0%;
+    width: fit-content;
+
+    /* font */
+    font-size: 5rem;
+    font-family: FaktosFont;
+}
+
+p{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    text-justify: auto;
+}
+
+img{
+    max-width: 75vh;
+    max-height: 75vh;
+    object-fit: contain;
+    border-radius: 2rem;
+}
+
+nav{
+    /* position */
+    margin: 0%;
+    padding: 1%;
+    position: fixed;
+    z-index: 999;
+    justify-content: left;
+    width: 100%;
+    height: auto; 
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+
+    /* style */
+    background-color: var(--backgroundColor);
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+}
+
+nav:hover{
+    opacity: 1;
+}
+
+nav > a{
+    font-size: 2rem;
+    margin: 0 1% 0 1%;
+    border: none;
+    background-color: inherit;
+    font-family: FaktosFont;
+    color: var(--fontColor);
+    text-decoration: none;
+}
+
+nav > a:hover{
+    padding: 0 2% 0 2%;
+    border-radius: 2rem;
+    background-color: var(--fontColor);
+    color: var(--backgroundColor);
+}
+
+.section{
+    /* position */
+    margin: 0%;
+    padding: 2% 0 2% 0;
+    z-index: 0;
+    justify-content: space-between;
+    width: 100%;
+    height: auto; 
+
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    
+    /* style */
+    transform: rotate(0deg); 
+    background-color: var(--backgroundColor);
+}
+
+.highlight{
+    z-index: 1;
+    background-color: var(--hl1Color);
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.card{
+    /* position */
+    margin: 3% 5% 3% 5%;
+    padding: 2%;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+
+    /* flex */
+    display: flex;
+    flex-direction: column;
+
+    /* style */
+    transform: rotate(0deg); 
+    background-color: var(--hl2Color);
+    border-radius: 2rem;
+}
