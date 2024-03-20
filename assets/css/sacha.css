@@ -142,7 +142,7 @@ img{
     max-width: 75vh;
     max-height: 75vh;
     object-fit: contain;
-    border-radius: 2rem;
+    border-radius: 30px; /*2rem*/
 }
 
 nav{
