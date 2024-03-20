@@ -9,7 +9,7 @@
     <nav>
         <a href="index.html">Home</a>
         <div style="width: 100%;"></div>
-        <a href="https://www.linkedin.com/in/l%C3%A9a-cortet-0729b22b0/" target="_blank">linkedin</a>
+        <a href="https://www.linkedin.com/in/l%C3%A9a-cortet-0729b22b0/" target="_blank">Linkedin</a>
         <a href="https://github.com/nakaeuna" target="_blank">Github</a>
         <div style="width: 2%;"></div>
     </nav>
@@ -19,7 +19,7 @@
         <div class="section highlight">
             <div class="flex-row">
             <h1 class="slideRight">Léa Cortet</h1>
-            <img src="assets/img/Capture.png" alt="image de sacha stylisé" class="slideLeft">
+            <img src="assets/img/lea/Capture.png" alt="image de sacha stylisé" class="slideLeft">
             </div>
         </div>
         
@@ -28,7 +28,7 @@
             <!-- presentation -->
             <div class="card">
                 <div class="flex-row">
-                    <img src="assets/img/lea.png" alt="ᓚᘏᗢ" style="margin-right: 2%;">
+                    <img src="assets/img/lea/lea.png" alt="ᓚᘏᗢ" style="margin-right: 2%;">
                     <div class="flex-col">
                         <h2>Qui suis-je ?</h2>
                         <p>
@@ -64,7 +64,7 @@
         <div class="section">
             <!-- quadtree -->
             <div class="card">
-                <h2>Projet quadtree</h2>
+                <h2>Projet Quadtree</h2>
                 <div class="flex-row">
                     <div class="flex-col">
                         <p>
@@ -80,12 +80,12 @@
                     </div>
                     <div class="flex-col">
                         <img src="assets/img/sacha/sacha-quadtree-1.png" alt="image du projet quadtree" style="margin-left: 5%;">
-                        <p>
+                        <p  style="margin-left: -10%;">
                             Nous avons bien entendu implémenté certaine des extention demandé comme les portails ou la sauvegarde du monde, mais nous nous somme permis quelques extra
                             quand à la consigne de la génération aléatoire, en effet au lieu de simplement choisir aléatoirement la valeur des tuiles, j'ai choisi de coder un algorithme de
                             génération procedural de donjon. 
                         </p>
-                        <p>
+                        <p  style="margin-left: -10%;">
                             L'algorithme que j'ai choisi reste assez simple puisque c'est un algorithme basé sur un arbre binaire nommé arbre BSP 
                             (Binary Space Partition). J'ai utilisé le site <a href="https://www.roguebasin.com/index.php/Basic_BSP_Dungeon_generation">roguebasin</a> 
                             comme documentation pour l'implementation de cet algorithme.
@@ -94,33 +94,73 @@
                 </div>
             </div>
 
-            <!-- brainf -->
+            <!-- flask -->
             <div class="card">
-                <h2>Projet brainf</h2>
+                <h2>Projet Flask</h2>
                 <div class="flex-row">
-                    <img src="assets/img/sacha/helloWorldBf_code.png" alt="image du projet quadtree" style = "margin-top: 2%;">
-                    <div class="flex-col">
+                    <div style = "margin-top: 2%;">
+                        <img src="assets/img/lea/flask.jpg" alt="image du projet flask" style = "margin-top: 2%;">
+                        <img src="assets/img/lea/flask2.PNG" alt="image du projet flask" style = "margin-top: 2%;">
+                    </div>
+                    <div class="flex-col" style="margin-left: -10%;">
                         <p>
-                            Le but de ce projet étais de créer un interpreteur brainf le plus complet possible en go sans utiliser de 
-                            documentation autre que sa page de wiki diponible sur <a href="https://esolangs.org/wiki/Brainfuck">esolangs</a>.
+                            J'ai décidé de créer une To-Do List interactive. Mon objectif était d'avoir une base de données manipulable 
+                            via une page web, avec la possibilité de faire au moins une mise à jour dans la base de données 
+                            (par un UPDATE ou un INSERT).</a>
                         </p>
                         <p>
-                            C'était un projet assez court (seulement une semaine de developpement), le but étais surtout de me challenger et de revenir sur
-                            un defi que je m'étais lancer environ un ans au paravent qui était de faire un interpreteur brainf en C sans documentation, défi
-                            que je n'avazis pas réussi à l'époque.
+                            Pour commencer, j'ai installé FLASK et les outils nécessaires à la gestion des bases de données en Python. 
+                            J'ai ensuite créé une base de données SQLite à l'aide du module SQLite3 de Python, qui a été intégré dans mon 
+                            application FLASK. J'ai ensuite créé une vue pour permettre aux utilisateurs de supprimer des tâches de la 
+                            base de données. Ensuite, j'ai créé une page web pour afficher les tâches.. 
+                            J'ai ajouté deux formulaires pour permettre aux utilisateurs d'ajouter de nouvelles tâches et d'en supprimer.
                         </p>
                         <p>
-                            Je ferais une release de ce projet sur mon github quand je serais pleinement satisfait du résultat, j'aimerais en effet paufinié 
-                            la documentation du projet ainsi que certains tests.
+                            Il y a quelques particularités au niveau du projet. Par exemple, j'ai rencontré des difficultés à communiquer 
+                            avec le serveur dans un premier temps puis j'ai du apprendre à créer un formulaire où un champ était déjà rempli. (L’ID de la tâche à supprimer) 
+                            J'ai dû utilisé un input caché. Il a fallu éviter les pièges petit à petit.
                         </p>
                     </div>
                 </div>
             </div>
 
-        <!-- echecs -->
+            <!-- csv -->
+            <div class="card">
+                <h2>Projet Folium / CSV</h2>
+                <div class="flex-row">
+                    <div style = "margin-top: 2%;">
+                        <img src="assets/img/lea/csv.PNG" alt="image du projet flask" style = "margin-top: 2%;">
+                        <img src="assets/img/lea/csv2.PNG" alt="image du projet flask" style = "margin-top: 2%;">
+                    </div>
+                    <div class="flex-col" style="margin-left: -10%;">
+                        <p>
+                            J'ai choisi d'utiliser la bibliothèque folium afin d'exploiter les données d'un fichier CSV 
+                            sous forme de carte. Le fichier CSV recense tous les lycées de Bretagne avec les informations qui 
+                            leurs correspondent tels que leurs noms, leurs adresses exactes, si le lycée est public ou privé, etc.
+                            J'ai commencé par traduire le fichier CSV en une liste de dictionnaires. J'ai ensuite 
+                            exploité les données grâce aux commandes folium nous permettant de créer et de 
+                            placer des points sur une carte.</a>
+                        </p>
+                        <p>
+                            J'ai ensuite réalisé une page Web afin de rendre le projet dans le cadre de mon année de Première NSI.
+                            J'ai complété mes connaissances en Web que je venais de découvrir en début d'année. Je me suis beaucoup amusé
+                            à trouver des ressources pour proposer un design original et une palette de couleurs qui correspondrait au 
+                            fond de ma page qui est quelque peu original.
+                        </p>
+                        <p>
+                            C'était par ailleurs un de mes premiers où j'ai été amené à collaborer avec une équipe pour une réalisation.
+                            Nous étions une équipe composé uniquement de filles et cela était d'autant plus appréciable que la situation est 
+                            rare. Lénaïc m'a été d'une grande aide pour la réalisation du code en python et Léa a su amené des idées originales. 
+                            Merci encore à elles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        <!-- CyberPunk -->
         <div class="section highlight">
             <h2>Mention spéciale à mon univers adoré</h2>
-            <h3>Voici une galerie photo afin que vous apréciez vous aussi ces merveilles visuelles.</h3>
+            <h3>Voici une galerie photo afin que vous puissiez vous aussi apprécier ces merveilles visuelles.</h3>
         </div>
         
         <!-- echecs -->
@@ -146,26 +186,7 @@
                         Le projet reste tout de même disponible sur ma page <a href="https://github.com/Afissard/poke_project_v1">github</a> à titre historique.
                     </p>
                 </div>
-            </div>
-
-            <!-- Game of Life -->
-            <div class="card">
-                <h2>Conway Game of Life en C</h2>
-                <div class="flex-row">
-                    <img src="assets/img/sacha/Gospers_glider_gun.gif" style="margin-top: 2%;">
-                    <div class="flex-col">
-                        <p>
-                            Ce projet est un de mes tout premier projet "fini", cependant ce dernier est aussi truffé de bug et meriterais un bon nettoyage.
-                            Comme son nom l'indique, le but étais recréer le <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">jeu de la vie</a> créer par le 
-                            célèbre mathématicien Conway. Le jeu de la vie est très certainement l'automate cellulaire le plus connus.
-                        </p>
-                        <p>
-                            Le code du projet est toujours diponible sur ma page <a href="https://github.com/Afissard/Ludo_Vitae">github</a>, bien que je ne garentis
-                            pas qu'il soit encore fonctionnel.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            </div>  
         </div>
     </main>
 
