@@ -63,6 +63,9 @@
     --blueColor: rgb(0, 79, 207);
     --redColor: rgb(204, 29, 49);
 
+    --salmonPinkColor: rgba(233,93,70,255);
+    --newBlueColor: rgba(2,100,206,255);
+
     /* font */
     font-family: JohnstonFont, consolas, monospace;
 }
@@ -71,7 +74,7 @@
     :root{
         --fontColor: var(--blackColor);
         --backgroundColor: var(--whiteColor);
-        --hl1Color: var(--redColor);
+        --hl1Color: var(--newBlueColor);
         --hl2Color: var(--lightGreyColor);
 
         background-color: var(--backgroundColor);
@@ -83,7 +86,7 @@
     :root{
         --fontColor: var(--whiteColor);
         --backgroundColor: var(--blackColor);
-        --hl1Color: var(--blueColor);
+        --hl1Color: var(--salmonPinkColor);
         --hl2Color: var(--darkGreyColor);
 
         background-color: var(--blackColor);
@@ -139,7 +142,7 @@ img{
     max-width: 75vh;
     max-height: 75vh;
     object-fit: contain;
-    border-radius: 2rem;
+    border-radius: 30px;
 }
 
 nav{
