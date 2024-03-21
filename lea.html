@@ -3,6 +3,9 @@
 <head>
     <title>Portefolio Léa</title>
     <link rel="stylesheet" type="text/css" href="assets/css/lea.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="assets/js/lea.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -163,30 +166,33 @@
             <h3>Voici une galerie photo afin que vous puissiez vous aussi apprécier ces merveilles visuelles.</h3>
         </div>
         
-        <!-- echecs -->
+        <!-- galerie -->
         <div class="section">
-            <!-- GB RPG -->
+            <!-- photos -->
             <div class="card">
-                <h2>GameBoy RPG</h2>
-                <div class="flex-row">
-                    <div class="flex-col">
-                        <p>
-                            Je n'ai jamais vraiment fini ce projet, et bien que je compte me ré-attaqué au game dev retro (que ce soit sur GameBoy ou 
-                            GameBoy Advence), je pense que je ne retoucherais pas à ce projet. 
-                        </p>
-                        <p>
-                            Bien qu'il ai était très plaisant d'apprendre à compiler
-                            pour la GameBoy, les outils et la documentation  ont eux beacoup viellis, rendant le processus de création de sprite et tile-map
-                            très long et peu pratique. Le manque de documentation du GameBoy devkit a achever ma motivation. 
-                        </p>
-
+                <div class="diapo" data-speed="2000" data-transition="700">
+                    <div class="elements">
+                        <div class="element">
+                            <img src="assets/img/lea/Cyberpunk Cityscape.jpeg">
+                        </div>
+                        <div class="element">
+                            <img src="assets/img/lea/TRYHARD, Max Hay.jpeg">
+                        </div>
+                        <div class="element">
+                            <img src="assets/img/lea/téléchargement (1).jpeg">
+                        </div>
+                        <div class="element">
+                            <img src="assets/img/lea/téléchargement (2).jpeg">
+                        </div>
+                        <div class="element">
+                            <img src="assets/img/lea/téléchargement (3).jpeg">
+                        </div>
                     </div>
-                    <img src="assets/img/sacha/GB_RPG.gif">
-                    <p>
-                        Le projet reste tout de même disponible sur ma page <a href="https://github.com/Afissard/poke_project_v1">github</a> à titre historique.
-                    </p>
+                    <!-- Flèches -->
+                    <i id="nav-gauche" class="las la-chevron-left"></i>
+                    <i id="nav-droite" class="las la-chevron-right"></i>
                 </div>
-            </div>  
+            </div>
         </div>
     </main>
 
