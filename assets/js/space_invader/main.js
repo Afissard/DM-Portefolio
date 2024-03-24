@@ -9,6 +9,7 @@ class Game {
         this.lvl = 1;
         this.player = null;
         this.invaderList = [];
+        this.bunkerList = [];
         this.newGame();
     }
 
@@ -27,14 +28,20 @@ class Game {
     }
 
     newGame(){
-        this.player = new Player(canvas.width/2, canvas.height-8, 8, "player")
+        this.player = new Player(canvas.width/2, canvas.height-8, 8)
         this.invaderList = this.newLvl(1)
+        this.bunkerList = [
+            new Entity(canvas.width/2, canvas.height-32, 0, "bunker-01")
+        ]
     }
 
     update(){
         this.player.update()
         for(let i in this.invaderList){
             this.invaderList[i].update()
+        }
+        for(let i in this.bunkerList){
+            this.bunkerList[i].update()
         }
     }
 
@@ -43,6 +50,9 @@ class Game {
         this.player.draw(ctx)
         for(let i in this.invaderList){
             this.invaderList[i].draw(ctx)
+        }
+        for(let i in this.bunkerList){
+            this.bunkerList[i].draw(ctx)
         }
     }
 

@@ -1,10 +1,10 @@
-
 class Entity {
-    constructor(x, y, speed, spriteId) {
+    constructor(x, y, pv, spriteId) {
         this.x = x;
         this.y = y;
-        this.speed = speed;
+        this.pv = pv;
         this.sprite = document.getElementById(spriteId);
+        this.speed = 0;
     }
 
     update(){
@@ -12,7 +12,8 @@ class Entity {
     }
 
     draw(ctx){
-        ctx.drawImage(this.sprite, this.x-8, this.y-8, 16, 16); // draw + zoom*2
+        ctx.drawImage(this.sprite, this.x-this.sprite.width, this.y-this.sprite.height, this.sprite.width*2, this.sprite.height*2); // draw + zoom*2
+        // ctx.drawImage(this.sprite, this.x, this.y, this.sprite.width, this.sprite.height); // draw + zoom*1
     }
 
     moveLeft(){
@@ -38,4 +39,6 @@ class Entity {
             this.y += this.speed;
         }
     }
+
+    // TODO : collision detection -> damage
 }

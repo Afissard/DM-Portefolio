@@ -1,6 +1,7 @@
 class Player extends Entity {
-    constructor(x, y, speed, spritePath) {
-        super(x, y, speed, spritePath);
+    constructor(x, y, pv) {
+        super(x, y, pv, "player");
+        this.speed = 4;
     }
 
     update() {
@@ -13,6 +14,9 @@ class Player extends Entity {
         if (shoot){
             console.log("shoot")
         }
+
+        // TODO : collision detection -> damage
+        // TODO : shoot laser
     }
 
     draw(ctx) {
