@@ -114,6 +114,7 @@ h1{
     margin: 0%;
     padding: 2%;
     width: fit-content;
+    vertical-align: middle;
 
     /* font */
     font-size: 10rem;
@@ -218,6 +219,7 @@ nav > a:hover{
     justify-content: space-between;
     width: auto;
     height: auto;
+    align-self: center;
 
     /* flex */
     display: flex;
