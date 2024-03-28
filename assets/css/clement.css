@@ -173,6 +173,7 @@ nav:hover{
 nav > a{
     font-size: 2rem;
     margin: 0 1% 0 1%;
+    padding: 0 2% 0 2%;
     border: none;
     background-color: inherit;
     font-family: FaktosFont;
@@ -183,8 +184,9 @@ nav > a{
 nav > a:hover{
     padding: 0 2% 0 2%;
     border-radius: 2rem;
-    background-color: var(--fontColor);
-    color: var(--backgroundColor);
+    /* background-color: var(--blueColor); */
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    color: var(--fontColor);
 }
 
 
@@ -214,7 +216,7 @@ nav > a:hover{
 
 .main{
     /* position */
-    margin: 3% 5% 3% 5%;
+    margin: 3% 5% 0% 5%;
     padding: 2%;
     justify-content: space-between;
     width: auto;

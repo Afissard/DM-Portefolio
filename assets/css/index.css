@@ -49,7 +49,44 @@
     padding: 0;
     justify-content: space-evenly;
     display: flex;
-    flex-flow: column;
+    width: fit-content;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2;
+    height: auto;
+}
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+    height: auto;
+}
+
+.parent2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 0.5rem;
+}
+
+.div3 {
+    grid-area: 1 / 1 / 2 / 2;
+    background:url(../img/mainPage/667.jpg);
+    background-size:100% auto;
+    border-radius: 30px;
+}
+
+.div4 {
+    grid-area: 2 / 1 / 3 / 2;
 }
 
 :root{
