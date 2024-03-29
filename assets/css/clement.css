@@ -63,6 +63,7 @@
     --blueColor: rgb(0, 79, 207);
     --redColor: rgb(204, 29, 49);
 
+    --hlGradiant: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
     /* font */
     font-family: JohnstonFont, consolas, monospace;
 }
@@ -118,6 +119,7 @@ h1{
     /* font */
     font-size: 10rem;
     font-family: FaktosShadowFont;
+    color: var(--whiteColor);
 }
 
 h2{
@@ -185,7 +187,7 @@ nav > a:hover{
     padding: 0 2% 0 2%;
     border-radius: 2rem;
     /* background-color: var(--blueColor); */
-    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    background-image: var(--hlGradiant);
     color: var(--fontColor);
 }
 
@@ -212,6 +214,7 @@ nav > a:hover{
     z-index: 1;
     align-items: left;
     /* justify-content: space-between; */
+    background-image: var(--hlGradiant);
 }
 
 .main{

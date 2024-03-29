@@ -121,6 +121,7 @@ h1{
     /* font */
     font-size: 10rem;
     font-family: FaktosShadowFont;
+    color: var(--whiteColor);
 }
 
 h2{
